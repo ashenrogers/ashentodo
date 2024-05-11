@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ivory">#FF95A8AD</color>
+    <color name="brown">#FFB19C98</color>
+    <color name="cream">#FFD5BAAF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#ed5f1e</color>
+    <color name="background_color">#FFFFFF</color> <!-- Change the color value to your desired background color -->
+    <color name="text_color">#000000</color> <!-- Change the color value to your desired text color -->
+    <color name="accent_color">#FF4081</color> <!-- Change the color value to your desired accent color -->
+    <color name="hint_color">#808080</color> <!-- Adjust the color value as needed -->
+
+
+</resources>

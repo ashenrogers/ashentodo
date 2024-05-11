@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/cream"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/addNoteHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_note"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins" />
+
+    <ImageView
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addNoteHeading"
+        android:src="@drawable/ic_baseline_done_24"
+        android:padding="16dp"
+        android:tint="@color/brown" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addNoteHeading"
+        android:layout_marginTop="16dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/ivory">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Title"
+            android:textSize="20sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@null"
+            android:fontFamily="@font/poppins" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/contentTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextInputLayout"
+        android:layout_marginTop="16dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/ivory">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the description"
+            android:textSize="18sp"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@null"
+            android:fontFamily="@font/poppins" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream"
+    tools:context=".UpdateNoteActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TextView for editNoteHeading -->
+            <TextView
+                android:id="@+id/editNoteHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/poppins"
+                android:text="@string/edit_note"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <!-- ImageView for updateSaveButton -->
+            <ImageView
+                android:id="@+id/updateSaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_done_24"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@id/editNoteHeading"
+                android:layout_marginEnd="60dp"
+                android:tint="@color/brown" />
+
+            <!-- EditText for updateTitle -->
+            <EditText
+                android:id="@+id/updateTitleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/editNoteHeading"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/orange_border"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/enter_the_title"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textSize="20sp" />
+
+            <!-- EditText for updateContent -->
+            <EditText
+                android:id="@+id/updateContentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateTitleEditText"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/orange_border"
+                android:fontFamily="@font/poppins"
+                android:gravity="top"
+                android:hint="@string/enter_the_description"
+                android:padding="12dp"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
