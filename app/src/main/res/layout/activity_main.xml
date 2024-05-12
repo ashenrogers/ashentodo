@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cream"
+    android:background="@color/Ivory"
     tools:context=".MainActivity">
 
     <!-- Encapsulate the content inside a NestedScrollView -->
@@ -13,10 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="16dp">
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="false"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
 
             <!-- TextView for notesHeading -->
             <TextView
@@ -30,6 +39,7 @@
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
+
             <!-- RecyclerView for notesRecyclerView -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/notesRecyclerView"
@@ -38,7 +48,7 @@
                 android:layout_below="@id/notesHeading"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="@color/cream"
+                android:background="@color/SoftGray"
                 android:elevation="4dp"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 

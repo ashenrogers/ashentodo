@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">notessqlite</string>
+    <string name="app_name">TodoGenius</string>
     <string name="notes">Notes</string>
-    <string name="enter_the_description">Enter the description</string>
-    <string name="enter_the_title">Enter the Title</string>
-    <string name="edit_note">Edit Note</string>
-    <string name="add_note">Add Note</string>
+    <string name="enter_the_description">Pour Your Thoughts Here</string>
+    <string name="enter_the_title">Capture Your Sparkling Idea</string>
+    <string name="edit_note">Edit Your Note</string>
+    <string name="add_note">Add Your Note</string>
 </resources>

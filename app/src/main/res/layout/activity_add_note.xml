@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/cream"
+    android:background="@color/SoftGray"
     tools:context=".AddNoteActivity">
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_alignTop="@id/addNoteHeading"
         android:src="@drawable/ic_baseline_done_24"
         android:padding="16dp"
-        android:tint="@color/brown" />
+        android:tint="@color/black" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/titleTextInputLayout"

@@ -3,8 +3,12 @@ package com.example.notessqlite
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.notessqlite.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -28,6 +32,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent( this, AddNoteActivity::class.java)
             startActivity(intent)
         }
+        val dateTextView: TextView = findViewById(R.id.dateTextView)
+
+        // Get current date and format it
+        val currentDate = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(Date())
+
+        // Set the formatted date to the TextView
+        dateTextView.text = currentDate
     }
 
     override fun onResume() {

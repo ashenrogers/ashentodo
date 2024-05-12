@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cream"
+    android:background="@color/SoftGray"
     tools:context=".UpdateNoteActivity">
 
     <androidx.core.widget.NestedScrollView
@@ -38,7 +38,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignTop="@id/editNoteHeading"
                 android:layout_marginEnd="60dp"
-                android:tint="@color/brown" />
+                android:tint="@color/black" />
 
             <!-- EditText for updateTitle -->
             <EditText
