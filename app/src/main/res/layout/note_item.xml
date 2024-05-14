@@ -14,13 +14,13 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="16dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal"
                 android:layout_marginTop="8dp">
 
@@ -34,6 +34,38 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/contentTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleTextView"
+                    android:text="Content"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:maxLines="3"
+                    android:layout_marginTop="10dp" />
+
+                <!-- Add TextView for displaying time -->
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contentTextView"
+                    android:layout_marginTop="10dp"
+                    android:text="Date"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/timeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/dateTextView"
+                    android:text="Time"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
                 <ImageView
                     android:id="@+id/updateButton"
                     android:layout_width="24dp"
@@ -41,8 +73,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginEnd="30dp"
                     android:src="@drawable/baseline_edit_24"
-                    android:tint="@color/black"
-                    />
+                    app:tint="@color/black" />
 
                 <ImageView
                     android:id="@+id/deleteButton"
@@ -50,20 +81,10 @@
                     android:layout_height="24dp"
                     android:layout_alignParentEnd="true"
                     android:src="@drawable/baseline_delete_24"
-                    android:tint="@color/black"
-                    />
+                    app:tint="@color/black" />
 
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/contentTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Content"
-                android:fontFamily="@font/poppins"
-                android:textColor="@color/black"
-                android:maxLines="3"
-                android:layout_marginTop="4dp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

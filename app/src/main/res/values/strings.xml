@@ -5,4 +5,6 @@
     <string name="enter_the_title">Capture Your Sparkling Idea</string>
     <string name="edit_note">Edit Your Note</string>
     <string name="add_note">Add Your Note</string>
+    <string name="enter_the_time">enter_the_time</string>
+    <string name="enter_the_date">enter_the_date</string>
 </resources>

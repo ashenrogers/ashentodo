@@ -19,14 +19,6 @@
             android:layout_height="match_parent"
             android:padding="16dp">
 
-            <TextView
-                android:id="@+id/dateTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="false"
-                android:textSize="18sp"
-                android:textColor="@color/black" />
-
             <!-- TextView for notesHeading -->
             <TextView
                 android:id="@+id/notesHeading"
@@ -39,13 +31,33 @@
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
+            <!-- TextView for displaying date -->
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/notesHeading"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" /> <!-- Initially set to gone -->
+
+            <!-- TextView for displaying time -->
+            <TextView
+                android:id="@+id/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dateTextView"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
 
             <!-- RecyclerView for notesRecyclerView -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/notesRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/notesHeading"
+                android:layout_below="@id/timeTextView"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:background="@color/SoftGray"

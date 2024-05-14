@@ -9,6 +9,7 @@
     android:background="@color/SoftGray"
     tools:context=".AddNoteActivity">
 
+
     <TextView
         android:id="@+id/addNoteHeading"
         android:layout_width="wrap_content"
@@ -19,7 +20,9 @@
         android:text="@string/add_note"
         android:textSize="24sp"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppins" />
+        android:fontFamily="@font/poppins"
+        tools:ignore="RelativeOverlap" />
+
 
     <ImageView
         android:id="@+id/saveButton"
@@ -29,7 +32,62 @@
         android:layout_alignTop="@id/addNoteHeading"
         android:src="@drawable/ic_baseline_done_24"
         android:padding="16dp"
-        android:tint="@color/black" />
+        app:tint="@color/black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timeTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentTextInputLayout"
+        android:layout_marginTop="16dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/ivory">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/timeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Time"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@null"
+            android:fontFamily="@font/poppins" />
+
+        <Button
+            android:id="@+id/selectTimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTextInputLayout"
+        android:layout_marginTop="16dp"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/ivory">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Date"
+            android:textSize="18sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@null"
+            android:fontFamily="@font/poppins" />
+
+        <Button
+            android:id="@+id/selectDateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/titleTextInputLayout"
@@ -71,6 +129,10 @@
             android:inputType="textMultiLine"
             android:background="@null"
             android:fontFamily="@font/poppins" />
+
+
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
 </RelativeLayout>

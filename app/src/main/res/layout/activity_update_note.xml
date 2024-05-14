@@ -30,17 +30,19 @@
                 android:textSize="24sp" />
 
             <!-- ImageView for updateSaveButton -->
+
+            <!-- EditText for updateTitle -->
             <ImageView
                 android:id="@+id/updateSaveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_done_24"
-                android:layout_alignParentEnd="true"
                 android:layout_alignTop="@id/editNoteHeading"
-                android:layout_marginEnd="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="22dp"
+                android:src="@drawable/ic_baseline_done_24"
                 android:tint="@color/black" />
 
-            <!-- EditText for updateTitle -->
             <EditText
                 android:id="@+id/updateTitleEditText"
                 android:layout_width="match_parent"
@@ -67,6 +69,50 @@
                 android:hint="@string/enter_the_description"
                 android:padding="12dp"
                 android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/updateDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/updateContentEditText"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/orange_border"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/enter_the_date"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textSize="20sp" />
+
+            <!-- EditText for updateTime -->
+
+            <Button
+                android:id="@+id/selectTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateDateEditText"
+                android:layout_marginTop="114dp"
+                android:text="Select Time" />
+
+            <EditText
+                android:id="@+id/updateTimeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/selectTimeButton"
+                android:layout_marginTop="-106dp"
+                android:background="@drawable/orange_border"
+                android:fontFamily="@font/poppins"
+                android:hint="@string/enter_the_time"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/selectDateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/selectTimeButton"
+                android:layout_marginTop="-167dp"
+                android:text="Select Date" />
 
         </RelativeLayout>
     </androidx.core.widget.NestedScrollView>
