@@ -1,6 +1,5 @@
 package com.example.notessqlite
 
-
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -29,18 +28,6 @@ class UpdateNoteActivity : AppCompatActivity() {
 
         db = NoteDatabaseHelper(this)
 
-        selectedDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
-        selectedTime = SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
-
-        binding.selectDateButton.setOnClickListener {
-            showDatePickerDialog()
-        }
-
-        binding.selectTimeButton.setOnClickListener {
-            showTimePickerDialog()
-        }
-
-
         noteId = intent.getIntExtra("note_id", -1)
         if (noteId== -1){
             finish()
@@ -52,6 +39,9 @@ class UpdateNoteActivity : AppCompatActivity() {
         binding.updateContentEditText.setText(note.content)
         binding.updateDateEditText.setText(note.date)
         binding.updateTimeEditText.setText(note.time)
+
+        selectedDate = note.date
+        selectedTime = note.time
 
 
         binding.updateSaveButton.setOnClickListener{
@@ -86,6 +76,17 @@ class UpdateNoteActivity : AppCompatActivity() {
             finish()
             Toast.makeText(this, "Changes Saved", Toast.LENGTH_SHORT).show()
         }
+
+        binding.updateDateEditText.setOnClickListener {
+            showDatePickerDialog()
+        }
+
+        binding.updateTimeEditText.setOnClickListener {
+            showTimePickerDialog()
+        }
+
+
+
 
     }
 
